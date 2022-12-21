@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "playground"
+version = "0.1.0"
+description = ""
+authors = ["junhyeong.kim <junhyeong.kim@brainpad.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+
+# math
+numpy = "^1.24.0"
+scipy = "^1.9.3"
+
+# data manipulation
+pandas = "^1.5.2"
+
+# ml framework
+scikit-learn = "^1.2.0"
+tensorflow = "^2.11.0"
+keras = "^2.11.0"
+
+# visualization
+matplotlib = "^3.6.2"
+seaborn = "^0.12.1"
+plotly = "^5.11.0"
+
+# util
+tqdm = "^4.64.1"
+
+# simulation
+simpy = "^4.0.1"
+torch = "^1.13.1"
+lightning = "^1.8.5.post0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.19.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
